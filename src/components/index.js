@@ -4,6 +4,11 @@ export { default as SearchFeed } from './SearchFeed';
 export { default as VideoDetail } from './VideoDetail';
 export { default as Navbar } from './Navbar';
 export { default as Sidebar } from './Sidebar';
+export { default as ChannelCard } from './ChannelCard';
+export { default as Loader } from './Loader';
+export { default as SearchBar } from './SearchBar';
+export { default as Videos } from './Videos';
+export { default as VideoCard } from './VideoCard';
 export { AiFillYoutube } from 'react-icons/ai';
 export { HiOutlineSearch } from 'react-icons/hi';
 

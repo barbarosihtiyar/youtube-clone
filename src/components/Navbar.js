@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiFillYoutube, HiOutlineSearch } from "../components/index";
 
 const Navbar = () => {
   return (
-    <div className="px-5 py-3">
+    <div className="px-5 py-3 mt-3">
       <div className="flex justify-between align-center">
         <AiFillYoutube className="text-3xl text-red-600" />
         <div className="flex justify-between bg-white rounded-xl text-red-600 px-3 py-1 w-64">
