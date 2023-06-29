@@ -1,36 +1,42 @@
-import AiFillHome from 'react-icons/ai';
-import FaMusic from 'react-icons/fa';
-import BsCodeSlash from 'react-icons/bs';
-import MdOutlineOndemandVideo from 'react-icons/md';
-import MdSportsHandball from 'react-icons/md';
-import MdOutlineLiveTv from 'react-icons/md';
-import IoSchoolSharp from 'react-icons/io';
-import MdFaceRetouchingNatural from 'react-icons/md';
-import MdOutlineCheckroom from 'react-icons/md';
-import MdOutlineGraphicEq from 'react-icons/md';
-import MdOutlineTheaterComedy from 'react-icons/md';
-import MdFitnessCenter from 'react-icons/md';
-import FaBitcoin from 'react-icons/fa';
+import MusicNoteIcon from '@mui/icons-material/MusicNote';
+import HomeIcon from '@mui/icons-material/Home';
+import CodeIcon from '@mui/icons-material/Code';
+import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
+import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
+import LiveTvIcon from '@mui/icons-material/LiveTv';
+import SchoolIcon from '@mui/icons-material/School';
+import FaceRetouchingNaturalIcon from '@mui/icons-material/FaceRetouchingNatural';
+import CheckroomIcon from '@mui/icons-material/Checkroom';
+import GraphicEqIcon from '@mui/icons-material/GraphicEq';
+import TheaterComedyIcon from '@mui/icons-material/TheaterComedy';
+import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
+import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
 
 export const logo = 'https://i.ibb.co/s9Qys2j/logo.png';
 
 export const categories = [
-  { name: 'New', icon: <AiFillHome />, },
-  { name: 'JS Mastery', icon: <BsCodeSlash />, },
-  { name: 'Coding', icon: <BsCodeSlash />, },
-  { name: 'ReactJS', icon: <BsCodeSlash />, },
-  { name: 'NextJS', icon: <BsCodeSlash />, },
-  { name: 'Music', icon: <FaMusic /> },
-  { name: 'Education', icon: <IoSchoolSharp />, },
-  { name: 'Podcast', icon: <MdOutlineGraphicEq />, },
-  { name: 'Movie', icon: <MdOutlineOndemandVideo />, },
-  { name: 'Gaming', icon: <MdSportsHandball />, },
-  { name: 'Live', icon: <MdOutlineLiveTv />, },
-  { name: 'Sport', icon: <MdFitnessCenter />, },
-  { name: 'Fashion', icon: <MdOutlineCheckroom />, },
-  { name: 'Beauty', icon: <MdFaceRetouchingNatural />, },
-  { name: 'Comedy', icon: <MdOutlineTheaterComedy />, },
-  { name: 'Gym', icon: <MdFitnessCenter />, },
-  { name: 'Crypto', icon: <FaBitcoin />, },
+  { name: 'New', icon: <HomeIcon />, },
+  { name: 'JS Mastery', icon: <CodeIcon />, },
+  { name: 'Coding', icon: <CodeIcon />, },
+  { name: 'ReactJS', icon: <CodeIcon />, },
+  { name: 'NextJS', icon: <CodeIcon />, },
+  { name: 'Music', icon: <MusicNoteIcon /> },
+  { name: 'Education', icon: <SchoolIcon />, },
+  { name: 'Podcast', icon: <GraphicEqIcon />, },
+  { name: 'Movie', icon: <OndemandVideoIcon />, },
+  { name: 'Gaming', icon: <SportsEsportsIcon />, },
+  { name: 'Live', icon: <LiveTvIcon />, },
+  { name: 'Sport', icon: <FitnessCenterIcon />, },
+  { name: 'Fashion', icon: <CheckroomIcon />, },
+  { name: 'Beauty', icon: <FaceRetouchingNaturalIcon />, },
+  { name: 'Comedy', icon: <TheaterComedyIcon />, },
+  { name: 'Gym', icon: <FitnessCenterIcon />, },
+  { name: 'Crypto', icon: <DeveloperModeIcon />, },
 ];
 
+export const demoThumbnailUrl = 'https://i.ibb.co/G2L2Gwp/API-Course.png';
+export const demoChannelUrl = '/channel/UCmXmlB4-HJytD7wek0Uo97A';
+export const demoVideoUrl = '/video/GDa8kZLNhJ4';
+export const demoChannelTitle = 'JavaScript Mastery';
+export const demoVideoTitle = 'Build and Deploy 5 JavaScript & React API Projects in 10 Hours - Full Course | RapidAPI';
+export const demoProfilePicture = 'http://dergipark.org.tr/assets/app/images/buddy_sample.png'
