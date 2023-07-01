@@ -13,3 +13,14 @@
     top: 50%;
     left: 52%;
 }
+
+.videoCard{
+    margin-top: -28px;
+    padding: 10px;
+    max-width: 300px;
+}
+
+.channelCard{
+    padding: 10px;
+    max-width: 300px;
+}
