@@ -11,9 +11,9 @@ function App() {
       <Sidebar />
         <Routes>
           <Route path="/" exacth element={<Feed />}/>
-          <Route path="/videoDetail" exacth element={<VideoDetail />}/>
-          <Route path="/channelDetail" exacth element={<ChannelDetail />}/>
-          <Route path="/searchFeed" exacth element={<SearchFeed />}/>
+          <Route path="/videoDetail" element={<VideoDetail />}/>
+          <Route path="/channelDetail" element={<ChannelDetail />}/>
+          <Route path="/searchFeed" element={<SearchFeed />}/>
         </Routes>
       </BrowserRouter>
     </div>

@@ -4,9 +4,9 @@ const MainContext = createContext();
 
 
 export const ContextProvider = ({children}) => {
-    
+    const [selectedCategory,setSelectedCategory] = useState('New')
     return (
-    <MainContext.Provider>
+    <MainContext.Provider value={{selectedCategory,setSelectedCategory}}>
         {children}
     </MainContext.Provider>
     )

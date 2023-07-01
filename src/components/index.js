@@ -11,4 +11,5 @@ export { default as Videos } from './Videos';
 export { default as VideoCard } from './VideoCard';
 export { AiFillYoutube } from 'react-icons/ai';
 export { HiOutlineSearch } from 'react-icons/hi';
+export { TiTick } from 'react-icons/ti';
 
