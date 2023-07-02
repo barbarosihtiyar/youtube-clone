@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Videos from "./Videos";
 import { fetchFromApi } from "../utils/fetchFromApi";
 import { useMainContext } from "../contexts/context";
+import { Navbar,Sidebar} from "./index"
 
 const Feed = () => {
   const [videos, setVideos] = useState(null);
@@ -17,9 +18,13 @@ const Feed = () => {
   }, [selectedCategory]);
 
   return (
+    <>
+      <Sidebar />
+
     <div className="ml-64 mt-4">
       <Videos videos={videos} name={{ selectedCategory }} />
     </div>
+    </>
   );
 };
 
