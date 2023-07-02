@@ -7,7 +7,7 @@ const VideoCard = ({video}) => {
     video.id.videoId && 
       <div className="flex cursor-pointer">
       <div className='flex flex-col'>
-        <img src={video?.snippet?.thumbnails?.high?.url} alt={video.id.videoId} width={300} />
+        <img src={video?.snippet?.thumbnails?.high?.url} alt={video.id.videoId} width={310} />
         <div className="bg-zinc-800 videoCard max-w-full">
         {video.snippet.title.length > 28 ? 
            <p className='mb-2'>{video.snippet.title.slice(0, 28)}...</p>

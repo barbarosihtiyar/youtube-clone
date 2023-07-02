@@ -1,10 +1,11 @@
 import React from "react";
 import { VideoCard, ChannelCard, Loader } from "./index";
 import { useMainContext } from "../contexts/context";
+import { fetchFromApi } from "../utils/fetchFromApi";
 
 const Videos = ({videos }) => {
   const { selectedCategory } = useMainContext();
-  console.log(videos)
+  // console.log(videos)
   if (!videos) return <Loader />;
   return (
     <div className="h-full">
@@ -16,7 +17,7 @@ const Videos = ({videos }) => {
         {videos.map((video, index) => (
          (video.id.videoId || video.id.channelId) &&
           <div key={index}>
-            {video.id.channelId && <ChannelCard channelDetail={video} />}
+            {video.id.channelId && <ChannelCard style={{minWidth:"310px"}} channelDetail={video} />}
             {video.id.videoId && <VideoCard video={video} />}
           </div>
           
