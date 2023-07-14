@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Videos } from './index'
+import { Sidebar, Videos } from './index'
 import { useMainContext } from '../contexts/context';
 import { fetchFromApi } from '../utils/fetchFromApi';
 import { useParams } from 'react-router-dom';
@@ -22,9 +22,12 @@ const SearchFeed = () => {
 
   console.log(searchTerm)
   return (
-    <div> <div className="ml-64 mt-4">
+    <> 
+    <Sidebar />
+    <div className="ml-64 mt-4">
     <Videos videos={videos} />
-  </div></div>
+  </div>
+  </>
   )
 }
 
