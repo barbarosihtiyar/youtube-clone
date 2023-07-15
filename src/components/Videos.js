@@ -6,7 +6,7 @@ import { fetchFromApi } from "../utils/fetchFromApi";
 const Videos = ({videos }) => {
   const { selectedCategory } = useMainContext();
   // console.log(videos)
-  if (!videos) return <Loader />;
+  if (!videos?.length) return <Loader />;
   return (
     <div className="h-full">
       <div className="flex gap-x-3 mb-5">
