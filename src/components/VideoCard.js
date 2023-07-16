@@ -17,7 +17,9 @@ const VideoCard = ({ video }) => {
         <div className="flex flex-col">
           <Link
             to={
-              video?.id.videoId ? `/videoDetail/${video?.id.videoId}` : `/videoDetail/cV2gBU6hKfY`
+              video?.id.videoId
+                ? `/videoDetail/${video?.id.videoId}`
+                : `/videoDetail/cV2gBU6hKfY`
             }
           >
             <img
@@ -28,7 +30,11 @@ const VideoCard = ({ video }) => {
           </Link>
           <div className="bg-zinc-800 videoCard max-w-full">
             <Link
-              to={video?.id.videoId ? `/videoDetail/${video?.id.videoId}` : demoVideoUrl}
+              to={
+                video?.id.videoId
+                  ? `/videoDetail/${video?.id.videoId}`
+                  : demoVideoUrl
+              }
             >
               {video.snippet.title.length > 28 ? (
                 <p className="mb-2">{video.snippet.title.slice(0, 28)}...</p>
