@@ -17,12 +17,12 @@ const ChannelDetail = () => {
     .then((data) => setVideos(data?.items))
   },[id])
 
-  console.log(channelDetail,videos)
+  // console.log(channelDetail,videos)
   return (
     <div style={{minHeight:"95vh"}}>
       <div className='channelDetailLinear'></div>
       <ChannelCard style={{marginTop:"-98px"}}  channelDetail={channelDetail}/>
-      <Videos videos={videos}/>
+      <Videos videos={videos} display={false}/>
     </div>
   )
 }
