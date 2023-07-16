@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { useState, useEffect } from "react";
 import ReactPlayer from "react-player";
 import { CheckCircle } from "@mui/icons-material";
@@ -6,7 +6,6 @@ import { Loader, Videos } from "./";
 import { fetchFromApi } from "../utils/fetchFromApi";
 import { Link, useParams } from "react-router-dom";
 
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 

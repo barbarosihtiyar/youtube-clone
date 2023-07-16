@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { AiFillYoutube, HiOutlineSearch, SearchBar } from "../components/index";
+import React from "react";
+import { AiFillYoutube, SearchBar } from "../components/index";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {

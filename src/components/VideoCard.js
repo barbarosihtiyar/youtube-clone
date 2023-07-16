@@ -2,18 +2,15 @@ import React from "react";
 import { TiTick } from "./index";
 import { Link } from "react-router-dom";
 import {
-  demoThumbnailUrl,
   demoVideoUrl,
-  demoVideoTitle,
   demoChannelUrl,
-  demoChannelTitle,
 } from "../utils/constant";
 
-const VideoCard = ({ video }) => {
+const VideoCard = ({ video,display }) => {
   // console.log(video.id.videoId)
   return (
     video.id.videoId && (
-      <div className="flex cursor-pointer">
+      <div className="flex cursor-pointer mr-3" style={display === false ? {flexGrow:"0",flexShrink:"0"} : {flexGrow:"1",flexShrink:"1"}}>
         <div className="flex flex-col">
           <Link
             to={

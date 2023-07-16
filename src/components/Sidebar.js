@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { categories } from "../utils/constant";
 import { useMainContext } from '../contexts/context';
 
